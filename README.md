@@ -1,11 +1,8 @@
----
-title: Camera Permission
-description: Handle and request camera permission on Android.
----
-
 # cordova-plugin-camera-permission
 
-Depends on cordova-android >= 12 (at version < 12 it is not needed).
+Handle and request camera permission on Android.
+
+Depends on cordova-android >= 12 (below version 12 it is not needed).
 
 This plugin defines a global `navigator.camera` object, which provides an API for handling the camera permission of the device.
 

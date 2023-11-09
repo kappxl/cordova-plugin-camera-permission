@@ -66,9 +66,6 @@ public class CameraLauncher extends CordovaPlugin {
             callbackContext.sendPluginResult(r);
             return true;
         }
-
-        PluginResult r = new PluginResult(PluginResult.Status.OK);
-        callbackContext.sendPluginResult(r);
         return true;
     }
 
@@ -90,6 +87,9 @@ public class CameraLauncher extends CordovaPlugin {
                 return;
             }
         }
+
+        PluginResult r = new PluginResult(PluginResult.Status.OK);
+        callbackContext.sendPluginResult(r);
     }
 
     private boolean hasPermissions(String[] permissions) {

@@ -1,0 +1,64 @@
+{
+  "name": "cordova-plugin-camera-permission",
+  "version": "1.0.0",
+  "description": "Cordova Camera Permission Plugin",
+  "types": "./types/index.d.ts",
+  "cordova": {
+    "id": "cordova-plugin-camera-permission",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": "github:kappxl/cordova-plugin-camera-permission",
+  "bugs": "https://github.com/kappxl/cordova-plugin-camera-permission/issues",
+  "keywords": [
+    "cordova",
+    "camera",
+    "permission",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint ."
+  },
+  "author": "Kai Kappel",
+  "license": "MIT",
+  "engines": {
+    "cordovaDependencies": {
+      "3.0.0": {
+        "cordova-android": ">=6.3.0"
+      },
+      "4.1.0": {
+        "cordova-android": ">=6.3.0",
+        "cordova": ">=7.1.0"
+      },
+      "5.0.0": {
+        "cordova-android": ">=9.0.0",
+        "cordova-ios": ">=5.1.0",
+        "cordova": ">=9.0.0"
+      },
+      "5.0.4-dev": {
+        "cordova-android": "<10.0.0",
+        "cordova-ios": ">=5.1.0",
+        "cordova": ">=9.0.0"
+      },
+      "6.0.0": {
+        "cordova-android": ">=10.0.0",
+        "cordova-ios": ">=5.1.0",
+        "cordova": ">=9.0.0"
+      },
+      "7.0.0": {
+        "cordova-android": ">=12.0.0",
+        "cordova-ios": ">=5.1.0",
+        "cordova": ">=9.0.0"
+      },
+      "8.0.0": {
+        "cordova": ">100"
+      }
+    }
+  },
+  "devDependencies": {
+    "@cordova/eslint-config": "^5.0.0"
+  }
+}

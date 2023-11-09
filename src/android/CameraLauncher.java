@@ -57,6 +57,9 @@ public class CameraLauncher extends CordovaPlugin {
             String[] storagePermissions = getPermissions();
             if(!hasPermissions(storagePermissions)) {
                 PermissionHelper.requestPermissions(this, CAMERA_PERM_SEC, storagePermissions);
+            } else {
+                PluginResult r = new PluginResult(PluginResult.Status.OK);
+                callbackContext.sendPluginResult(r);
             }
         }
         catch (Error e)
@@ -89,7 +92,7 @@ public class CameraLauncher extends CordovaPlugin {
         }
 
         PluginResult r = new PluginResult(PluginResult.Status.OK);
-        callbackContext.sendPluginResult(r);
+        this.callbackContext.sendPluginResult(r);
     }
 
     private boolean hasPermissions(String[] permissions) {

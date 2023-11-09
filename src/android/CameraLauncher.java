@@ -67,8 +67,7 @@ public class CameraLauncher extends CordovaPlugin {
             return true;
         }
 
-        PluginResult r = new PluginResult(PluginResult.Status.NO_RESULT);
-        r.setKeepCallback(true);
+        PluginResult r = new PluginResult(PluginResult.Status.OK);
         callbackContext.sendPluginResult(r);
         return true;
     }
